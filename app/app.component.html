@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+<h1 class="bg-primary">welcometo angularclass</h1>
+<button mat-raised-button color="accent">Accent</button>
+<app-lists></app-lists>
+<div *ngIf="a else c">if block executed</div>
+<ng-template #b>then block executed</ng-template>
+<ng-template #c>else block executed</ng-template>
+<div class="bg" *ngIf="successmsg || isadmin else fail">user added successfully</div>
+<ng-template #fail>
+    <p class="bgn">user not added</p>
+</ng-template>
